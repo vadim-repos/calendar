@@ -1,14 +1,13 @@
 table {
     width: 100%;
-    margin-bottom: 1rem;
     border-collapse: collapse;
 
-    td, th {
-        border: 1px solid #000;
+    td, th {   
         padding: .5rem 1rem;
     }
 
     td {
+        border: 1px solid #4d4d4d;
         text-align: center;
         transition: all .2s;
 
@@ -17,7 +16,7 @@ table {
         }
 
         &:hover:not(.disabled) {
-            background: #eee;
+            background: rgb(58, 58, 58);
             cursor: pointer;
         }
     }
@@ -28,6 +27,13 @@ table {
     }
 
     .selected {
-        color: blue;
+        color: rgb(173, 48, 79);
     }
 }
+
+.table-wrapper {
+    margin-bottom: 1rem;
+    border: 2px solid #4d4d4d;;
+    border-radius: 8px;
+    overflow: hidden;
+  }

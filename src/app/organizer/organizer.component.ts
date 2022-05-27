@@ -21,13 +21,17 @@ export class OrganizerComponent implements OnInit {
       .pipe(switchMap(value => this.taskService.load(value)))
       .subscribe(tasks => this.tasks = tasks)
 
-    this.form = new FormGroup({
-      title: new FormControl('', Validators.required)
+    this.form = new FormGroup({    
+      title: new FormControl('', Validators.required),
+      recurrence: new FormControl('never')     
     })
   }
 
   onSubmit() {
+    const {recurrence} = this.form.value
     const {title} = this.form.value
+
+    console.log(recurrence)
 
     const task: Task = {
       title,

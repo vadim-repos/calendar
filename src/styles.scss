@@ -16,8 +16,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    background: #fff;
-    color: #333;
+    background: #232323;
+    color: #fff;
 }
 
 a {
@@ -41,6 +41,8 @@ input {
     border: 1px solid #ccc;
     outline: none;
     margin-bottom: .5rem;
+    background: #232323;
+    color: #fff;
 }
 
 .container {
@@ -48,10 +50,6 @@ input {
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
-}
-
-table th {
-    background: var(--light-color);
 }
 
 .btn {

@@ -21,7 +21,12 @@
 
     <footer>
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
-            <input type="text" formControlName="title">
+            <input type="text" placeholder="Enter your task text here" formControlName="title">
+            <label for="repetition">Repeats:</label>
+            <select id="repetition" formControlName="recurrence">
+                <option value="never">Never</option>
+                <option value="week">Every week</option>
+            </select>
             <button 
             type="submit"
             class="btn btn-primary btn-block"

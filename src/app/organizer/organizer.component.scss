@@ -7,6 +7,15 @@ section {
     }
 }
 
+select {
+    margin: 1rem .5rem;
+    padding: 4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .task {
     display: flex;
     justify-content: space-between;
